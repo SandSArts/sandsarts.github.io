@@ -48,7 +48,19 @@
       </nav>
   
         
-         <div style="background-color: #4962F2;padding: 100px;width: 70%; margin: auto;display: flex;flex-direction: column;">
+         <div style="background-color: #4962F2;padding: 100px;width: 90%; margin: auto;display: flex;flex-direction: column;">
+            <div id="mobile">
+                    <a href="https://www.youtube.com/embed/KjwkAE43c3U">Squampire - A 2D multiplayer shooter</a><br>
+                    <a href="https://www.youtube.com/embed/J5FfuJ4OZzo">Third person controller</a><br>
+                    <a href="https://www.youtube.com/embed/3lzzl8u2QsU">Advanced zombie AI - 1</a><br>
+                    <a href="https://www.youtube.com/embed/GWo0vN8vS8I">Advanced zombie AI - 2</a><br>
+                    <a href="https://www.youtube.com/embed/nXbu3pAwm2Y">Simple enemy AI - 1</a><br>
+                    <a href="https://www.youtube.com/embed/P27b7L3rGTU">Simple enemy AI - 2 </a><br>
+                    <a href="https://www.youtube.com/embed/gpqAtQPJUWE?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt">One of my client project</a><br>
+                    <a href="https://www.youtube.com/embed/NTtHr5M4C5E?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt">2D car game prototype </a><br>
+                    <a href="https://www.youtube.com/embed/vw6gJSrLpQQ?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt">A unique player mechanic</a>
+                </div>
+             <div id="pc">
                 <iframe src="https://www.youtube.com/embed/KjwkAE43c3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe  src="https://www.youtube.com/embed/J5FfuJ4OZzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe src="https://www.youtube.com/embed/nXbu3pAwm2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -58,9 +70,32 @@
                 <iframe  src="https://www.youtube.com/embed/gpqAtQPJUWE?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe  src="https://www.youtube.com/embed/NTtHr5M4C5E?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe  src="https://www.youtube.com/embed/vw6gJSrLpQQ?list=PLpFPg5B8cw2A9GvUPmelfCC6Z_87vVrpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+            
             </div>
         
-       
       </div>    
+    <style>
+        div a
+        {color: gold;}
+        @media all and (max-width:700px)
+        {
+            #mobile
+            {
+                display: block;
+            }
+            #pc
+            {display: none;}
+        }
+        @media all and (min-width:700px)
+        {
+            #mobile
+            {
+                display: none;
+            }
+            #pc
+            {display: flex;flex-direction: column;}
+        }
+    </style>
 </body>
 </html>
