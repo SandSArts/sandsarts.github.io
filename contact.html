@@ -35,9 +35,52 @@
     </div>
  
   </nav>
+ 
   <body style="background-color: #DB375A;">
-    <div>
-        <center> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQ4fPcO5X9oyQIDzNLXKu0x4_qEo0oJUvdYI1pjERX4Sn1pw/viewform?embedded=true" width="640" height="674" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>
-    </div>
+      <center>
+        <form target="hiddenFrame" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdQ4fPcO5X9oyQIDzNLXKu0x4_qEo0oJUvdYI1pjERX4Sn1pw/formResponse">
+          <input name="entry.1053137338" type="text" placeholder="Enter your name"><br>
+          <input name="entry.703742853" type="email" placeholder="Enter your email"><br>
+          <textarea name="entry.245846961" type="Enter your message" placeholder="Enter your message"></textarea><br>
+          <label id="sub" hidden>Submitted, will reply in few hours</label><br>
+          <button id="submit" type="submit" ><b>Submit</b></button>
+      </form>
+
+      </center>
+
+      <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
 </body>
+<style>
+  input,textarea
+  {padding: 10px;margin: 30px; width: 50%;}
+  textarea
+  {height: 25vh; min-width: 400px;}
+  
+  form
+  {padding: 15px;}
+  button
+  {
+    color:red;
+    background-color: gold;
+    min-width: 100px;
+    border-radius: 20px;
+    min-width: 400px;
+    font-weight: 700;
+    border-style: hidden;
+  }
+  label
+  {
+    color: gold;
+    font-weight: 700;
+  }
+ 
+</style>
+<script>
+  document.getElementById("submit").addEventListener("click",submit);
+  function submit()
+  {
+     document.getElementById("sub").hidden=false;
+  }
+ 
+</script> 
 </html>
